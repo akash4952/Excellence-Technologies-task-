@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Candidates = require('../models/candidate');
 const TestScore = require('../models/test_score');
 
-
+// functions defined for post
 module.exports.candidate = async (req, res) => {
     const post = await Candidates.find()
     res.send(post);
